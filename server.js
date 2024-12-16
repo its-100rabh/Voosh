@@ -17,7 +17,7 @@ const app = express();
 app.use(cors({ origin: true }));
 app.use(express.json());
 
-const baseurl = `/api/${process.env.API_VERSION || 'v1'}`;
+const baseurl = `https://voosh-kvvrwuqgw-saurabh-mahapatras-projects.vercel.app/api/${process.env.API_VERSION || 'v1'}`;
 
 app.use(`${baseurl}/`, userRouter);
 app.use(`${baseurl}/users`, adminRouter);
